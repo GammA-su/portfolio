@@ -1,0 +1,20 @@
+.title-slide-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+  }
+  /* RE>MOVED :
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .typewriter {
+    animation: typewriter 3s steps(20) 0.5s 1 normal both;
+  }
+  */

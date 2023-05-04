@@ -1,0 +1,104 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #FFFFF8;
+}
+
+
+.rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color: #FFFFF8;
+  font-size: 4rem;
+  
+}
+.small-rectangle {
+  position: absolute;
+  border: 2px solid black;
+ background-color: #FFFFF8;
+  width: 50%;
+  max-width: 182px;
+  height: 50%;
+  max-height: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+/* src/App.css */
+.page-content {
+  position: absolute;
+  top: 20px; /* Adjust this value for desired padding */
+  left: 20px; /* Adjust this value for desired padding */
+  width: calc(100% - 40px); /* Adjust the value "40px" for padding */
+  height: calc(100% - 40px); /* Adjust the value "40px" for padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* For the title to go on top left after clicks */
+
+.title-slide-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.5s ease-out;
+  overflow: hidden; /* Add this line for the typewriter effect */
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
