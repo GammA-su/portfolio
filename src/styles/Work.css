@@ -4,6 +4,8 @@
     top: 20px;
     left: 20px;
     overflow: hidden;
+    font-weight: 100;
+    font-size: 30px;
   }
   .image-gallery-wrapper {
     position: absolute;
@@ -11,7 +13,7 @@
     top: 50%;
     height: 100%;
     width: 100%;
-    transform: translateY(-50%) scale(0.8);
+    transform: translateY(-50%) scale(0.6);
   }
   .work-page-container {
     width: 100%;
@@ -23,3 +25,116 @@
     position: relative;
   }
   
+
+  
+  .horizontal-line {
+    width: 100px;
+    height: 1px;
+    background-color: black;
+    margin-right: 16px;
+  }
+  
+
+  
+  .project-info-wrapper {
+    position: absolute;
+    left: 0;
+    margin-left: 2rem;
+    top: calc(100% - 80%); /* Adjust this value to position the info-container vertically */
+    width: 50%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    width: 100%;
+    opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .info-title {
+    font: 15px 'Roboto', sans-serif;
+   /* margin-right: 16px;*/
+   font-weight: 300;
+
+  }
+  .info-content {
+    font: 15px 'Roboto', sans-serif;
+    font-weight: 400;
+    opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  }
+  
+  /* next and previous buttons */
+  .previous-project,
+.next-project {
+  position: absolute;
+  top: -20px; /* Adjust this value to position the elements vertically */
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 100;
+ cursor: pointer;
+}
+
+.previous-project {
+  left: 0;
+}
+
+.next-project {
+  right: 0;
+}
+
+
+/* Fading content of info*/
+.image-gallery.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.language-switch-button {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.language-switch-button:hover {
+  background-color: #555;
+}
+
+.language-switch-message {
+  position: fixed;
+  bottom: 22px;
+  left: 65px;
+  font-size: 14px;
+  color: #555;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(-30px);
+}
+
+.language-switch-message.active {
+  opacity: 1;
+  transform: translateX(0);
+}

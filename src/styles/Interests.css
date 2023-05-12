@@ -1,0 +1,51 @@
+.interests {
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .interests-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .title-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 30px;
+  }
+  
+  .interests-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .interests-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .interest-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .interest-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .interest-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  

@@ -4,7 +4,40 @@
     left: 20px;
     overflow: hidden;
   }
-  /* RE>MOVED :
+
+  .letter-container {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .hidden-text {
+    opacity: 0;
+  }
+  .letter-container p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+  
+  .letter-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* REMOVED :
   @keyframes typewriter {
     0% {
       width: 0;

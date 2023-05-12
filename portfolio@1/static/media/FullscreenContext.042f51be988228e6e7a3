@@ -1,0 +1,5 @@
+import { createContext } from 'react';
+
+const FullscreenContext = createContext({ isFullscreen: false, setIsFullscreen: () => {} });
+
+export default FullscreenContext;
